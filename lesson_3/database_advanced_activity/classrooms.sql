@@ -38,14 +38,18 @@ VALUES(9, 9, 'B')
 INSERT INTO classrooms(id, student_id, section)
 VALUES(10, 10, 'C')
 
+
 -- combine the two tables using inner join:
 SELECT * FROM students s INNER JOIN classrooms c ON s.id = c.student_id;
+
 
 -- combine the two tables using left join:
 SELECT * FROM students s LEFT JOIN classrooms c ON s.id = c.student_id;
 
+
 -- combine the two tables using right join:
 SELECT * FROM students s RIGHT JOIN classrooms c ON s.id = c.student_id;
+
 
 -- combine the two tables using full join:
 SELECT * FROM students s FULL JOIN classrooms c ON s.id = c.student_id;
